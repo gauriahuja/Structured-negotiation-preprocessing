@@ -1,0 +1,300 @@
+Dialogue 1 # takes in input and suggests 
+INPUT VALUES: 1 4 4 1 1 2
+CONVERSATION: them: i would like 4 hats and you can have the rest . <eos> you: deal <eos> them: <selection>
+OUTPUT: item0=1 item1=0 item2=1 item0=0 item1=4 item2=0
+PARTNER INPUT: 1 0 4 2 1 2
+--------------------------------------------------------------------------------
+Dialogue 2
+INPUT VALUES: 1 0 4 2 1 2
+CONVERSATION: you: i would like 4 hats and you can have the rest . <eos> them: deal <eos> you: <selection>
+OUTPUT: item0=0 item1=4 item2=0 item0=1 item1=0 item2=1
+PARTNER INPUT: 1 4 4 1 1 2
+--------------------------------------------------------------------------------
+Dialogue 3
+INPUT VALUES: 1 2 3 2 1 2
+CONVERSATION: them: hi i would like the book and ball and you can have the hats <eos> you: i can give you either the book or the ball <eos> them: ill take the book <eos> you: ok i will take the hats and ball <eos> them: deal <eos> you: <selection>
+OUTPUT: item0=0 item1=3 item2=1 item0=1 item1=0 item2=0
+PARTNER INPUT: 1 10 3 0 1 0
+--------------------------------------------------------------------------------
+Dialogue 4
+INPUT VALUES: 1 10 3 0 1 0
+CONVERSATION: you: hi i would like the book and ball and you can have the hats <eos> them: i can give you either the book or the ball <eos> you: ill take the book <eos> them: ok i will take the hats and ball <eos> you: deal <eos> them: <selection>
+OUTPUT: item0=1 item1=0 item2=0 item0=0 item1=3 item2=1
+PARTNER INPUT: 1 2 3 2 1 2
+--------------------------------------------------------------------------------
+Dialogue 5
+INPUT VALUES: 4 1 1 6 2 0
+CONVERSATION: you: i would like the hat and 3 books <eos> them: can i have the hat and the balls ? <eos> you: i need to have the hat <eos> them: take the books and give me the hat , its a win win , right ? <eos> you: no it's not <eos> them: <selection>
+OUTPUT: <disagree> <disagree> <disagree> <disagree> <disagree> <disagree>
+PARTNER INPUT: 4 0 1 6 2 2
+--------------------------------------------------------------------------------
+Dialogue 6
+INPUT VALUES: 1 1 3 1 2 3
+CONVERSATION: them: lemme get that book and ball ! <eos> you: i need 2 balls and a hat <eos> them: i'll take the book and two hats then ? <eos> you: ok <eos> them: <selection>
+OUTPUT: item0=0 item1=1 item2=2 item0=1 item1=2 item2=0
+PARTNER INPUT: 1 10 3 0 2 0
+--------------------------------------------------------------------------------
+Dialogue 7
+INPUT VALUES: 1 10 3 0 2 0
+CONVERSATION: you: lemme get that book and ball ! <eos> them: i need 2 balls and a hat <eos> you: i'll take the book and two hats then ? <eos> them: ok <eos> you: <selection>
+OUTPUT: item0=1 item1=2 item2=0 item0=0 item1=1 item2=2
+PARTNER INPUT: 1 1 3 1 2 3
+--------------------------------------------------------------------------------
+Dialogue 8
+INPUT VALUES: 1 6 2 0 4 1
+CONVERSATION: them: hello . i would like the book and one ball . <eos> you: you can have one ball 1 hat <eos> them: i need the book or it's no deal . <eos> you: no deal i am keeping the book <eos> them: ok no deal <eos> you: okay sounds good <eos> them: alright <eos> you: okay <eos> them: alright no deal <eos> you: okay its no deal <eos> them: <selection>
+OUTPUT: <no_agreement> <no_agreement> <no_agreement> <no_agreement> <no_agreement> <no_agreement>
+PARTNER INPUT: 1 8 2 1 4 0
+--------------------------------------------------------------------------------
+Dialogue 9
+INPUT VALUES: 1 8 2 1 4 0
+CONVERSATION: you: hello . i would like the book and one ball . <eos> them: you can have one ball 1 hat <eos> you: i need the book or it's no deal . <eos> them: no deal i am keeping the book <eos> you: ok no deal <eos> them: okay sounds good <eos> you: alright <eos> them: okay <eos> you: alright no deal <eos> them: okay its no deal <eos> you: <selection>
+OUTPUT: <no_agreement> <no_agreement> <no_agreement> <no_agreement> <no_agreement> <no_agreement>
+PARTNER INPUT: 1 6 2 0 4 1
+--------------------------------------------------------------------------------
+Dialogue 10
+INPUT VALUES: 3 1 1 3 2 2
+CONVERSATION: them: i love basketball and reading <eos> you: no . i want the hat and the balls <eos> them: both balls ? <eos> you: yeah or 1 ball and 1 book <eos> them: ok i want the hat and you can have the rest <eos> you: okay deal ill take the books and the balls you can have only the hat <eos> them: ok <eos> you: <selection>
+OUTPUT: item0=3 item1=0 item2=2 item0=0 item1=1 item2=0
+PARTNER INPUT: 3 0 1 8 2 1
+--------------------------------------------------------------------------------
+Dialogue 11
+INPUT VALUES: 3 0 1 8 2 1
+CONVERSATION: you: i love basketball and reading <eos> them: no . i want the hat and the balls <eos> you: both balls ? <eos> them: yeah or 1 ball and 1 book <eos> you: ok i want the hat and you can have the rest <eos> them: okay deal ill take the books and the balls you can have only the hat <eos> you: ok <eos> them: <selection>
+OUTPUT: item0=0 item1=1 item2=0 item0=3 item1=0 item2=2
+PARTNER INPUT: 3 1 1 3 2 2
+--------------------------------------------------------------------------------
+Dialogue 12
+INPUT VALUES: 2 2 2 2 2 1
+CONVERSATION: you: well now . i see two of everything . how about we split it down the middle ? <eos> them: i really just need the 2 books and 1 hat <eos> you: hmm . i could give you the two books , but i'd need both hats and both books in exchange . <eos> them: you mean both balls ? <eos> you: gah , yeah . sorry . <eos> them: ok i will take both books and you can have the rest <eos> you: deal <eos> them: <selection>
+OUTPUT: item0=0 item1=2 item2=2 item0=2 item1=0 item2=0
+PARTNER INPUT: 2 5 2 0 2 0
+--------------------------------------------------------------------------------
+Dialogue 13
+INPUT VALUES: 2 5 2 0 2 0
+CONVERSATION: them: well now . i see two of everything . how about we split it down the middle ? <eos> you: i really just need the 2 books and 1 hat <eos> them: hmm . i could give you the two books , but i'd need both hats and both books in exchange . <eos> you: you mean both balls ? <eos> them: gah , yeah . sorry . <eos> you: ok i will take both books and you can have the rest <eos> them: deal <eos> you: <selection>
+OUTPUT: item0=2 item1=0 item2=0 item0=0 item1=2 item2=2
+PARTNER INPUT: 2 2 2 2 2 1
+--------------------------------------------------------------------------------
+Dialogue 14
+INPUT VALUES: 3 2 1 0 1 4
+CONVERSATION: you: i would like the ball and two books <eos> them: gimme books and hat <eos> you: can i have one book <eos> them: yes <eos> you: <selection>
+OUTPUT: item0=1 item1=0 item2=1 item0=2 item1=1 item2=0
+PARTNER INPUT: 3 1 1 4 1 3
+--------------------------------------------------------------------------------
+Dialogue 15
+INPUT VALUES: 3 1 1 4 1 3
+CONVERSATION: them: i would like the ball and two books <eos> you: gimme books and hat <eos> them: can i have one book <eos> you: yes <eos> them: <selection>
+OUTPUT: item0=2 item1=1 item2=0 item0=1 item1=0 item2=1
+PARTNER INPUT: 3 2 1 0 1 4
+--------------------------------------------------------------------------------
+Dialogue 16
+INPUT VALUES: 3 0 1 4 2 3
+CONVERSATION: them: hi , i'd like 1 hat and 2 books <eos> you: 2 ball 1 book <eos> them: <selection>
+OUTPUT: <disagree> <disagree> <disagree> <disagree> <disagree> <disagree>
+PARTNER INPUT: 3 1 1 5 2 1
+--------------------------------------------------------------------------------
+Dialogue 17
+INPUT VALUES: 4 1 1 2 2 2
+CONVERSATION: them: i'll take the hat , you can have the rest . <eos> you: i would like the balls , hat and 2 books <eos> them: i can give you the hat and the balls if i keep the books . <eos> you: sorry that wont work . <eos> them: can you either give me the hat or 3 of the books ? <eos> you: sorry looks like we wont be making a deal <eos> them: yeah i have no idea how to do that . <eos> you: we keep saying no deal until the no deal button appears <eos> them: oh , how about i get 2 books ? <eos> you: you get 2 books and i get the rest ? <eos> them: yes . <eos> you: deal <eos> them: <selection>
+OUTPUT: item0=2 item1=1 item2=2 item0=2 item1=0 item2=0
+PARTNER INPUT: 4 1 1 6 2 0
+--------------------------------------------------------------------------------
+Dialogue 18
+INPUT VALUES: 4 1 1 6 2 0
+CONVERSATION: you: i'll take the hat , you can have the rest . <eos> them: i would like the balls , hat and 2 books <eos> you: i can give you the hat and the balls if i keep the books . <eos> them: sorry that wont work . <eos> you: can you either give me the hat or 3 of the books ? <eos> them: sorry looks like we wont be making a deal <eos> you: yeah i have no idea how to do that . <eos> them: we keep saying no deal until the no deal button appears <eos> you: oh , how about i get 2 books ? <eos> them: you get 2 books and i get the rest ? <eos> you: yes . <eos> them: deal <eos> you: <selection>
+OUTPUT: item0=2 item1=0 item2=0 item0=2 item1=1 item2=2
+PARTNER INPUT: 4 1 1 2 2 2
+--------------------------------------------------------------------------------
+Dialogue 19
+INPUT VALUES: 3 1 2 3 1 1
+CONVERSATION: you: if i can have the hats and the books you can have the ball <eos> them: so you want me to only have the ball ? no deal make me a better offer <eos> you: i will take the hats and two books and you can have the rest <eos> them: no deal ill take the books and the ball you can have the rest <eos> you: i can take the hats and one book and you can have the res <eos> them: no ill take the books the hats and the balls then <eos> you: clearly that isn't an option <eos> them: it is an option . <eos> you: well it isn't going to happen . you can either try to make a deal or not . i am suggesting that i take the hats and a book or the ball . you are not being reasonable by wanting everything <eos> them: you did not suggest hat and ball . you suggested i take the ball , that makes you unreasonable so dont be a hypocrite . you can have only the hats at this point <eos> you: <selection>
+OUTPUT: <no_agreement> <no_agreement> <no_agreement> <no_agreement> <no_agreement> <no_agreement>
+PARTNER INPUT: 3 3 2 0 1 1
+--------------------------------------------------------------------------------
+Dialogue 20
+INPUT VALUES: 3 3 2 0 1 1
+CONVERSATION: them: if i can have the hats and the books you can have the ball <eos> you: so you want me to only have the ball ? no deal make me a better offer <eos> them: i will take the hats and two books and you can have the rest <eos> you: no deal ill take the books and the ball you can have the rest <eos> them: i can take the hats and one book and you can have the res <eos> you: no ill take the books the hats and the balls then <eos> them: clearly that isn't an option <eos> you: it is an option . <eos> them: well it isn't going to happen . you can either try to make a deal or not . i am suggesting that i take the hats and a book or the ball . you are not being reasonable by wanting everything <eos> you: you did not suggest hat and ball . you suggested i take the ball , that makes you unreasonable so dont be a hypocrite . you can have only the hats at this point <eos> them: <selection>
+OUTPUT: <no_agreement> <no_agreement> <no_agreement> <no_agreement> <no_agreement> <no_agreement>
+PARTNER INPUT: 3 1 2 3 1 1
+--------------------------------------------------------------------------------
+Dialogue 21
+INPUT VALUES: 4 1 1 2 1 4
+CONVERSATION: them: hi there . i'd like a hat and a book , thank you much . <eos> you: deal <eos> them: gracias ! <eos> you: <selection>
+OUTPUT: item0=3 item1=0 item2=1 item0=1 item1=1 item2=0
+PARTNER INPUT: 4 0 1 9 1 1
+--------------------------------------------------------------------------------
+Dialogue 22
+INPUT VALUES: 4 0 1 9 1 1
+CONVERSATION: you: hi there . i'd like a hat and a book , thank you much . <eos> them: deal <eos> you: gracias ! <eos> them: <selection>
+OUTPUT: item0=1 item1=1 item2=0 item0=3 item1=0 item2=1
+PARTNER INPUT: 4 1 1 2 1 4
+--------------------------------------------------------------------------------
+Dialogue 23
+INPUT VALUES: 2 3 2 2 2 0
+CONVERSATION: them: i need both balls and 1 book <eos> you: deal . <eos> them: okay so i get both balls and 1 book <eos> you: <selection>
+OUTPUT: item0=1 item1=2 item2=0 item0=1 item1=0 item2=2
+PARTNER INPUT: 2 1 2 0 2 4
+--------------------------------------------------------------------------------
+Dialogue 24
+INPUT VALUES: 2 1 2 0 2 4
+CONVERSATION: you: i need both balls and 1 book <eos> them: deal . <eos> you: okay so i get both balls and 1 book <eos> them: <selection>
+OUTPUT: item0=1 item1=0 item2=2 item0=1 item1=2 item2=0
+PARTNER INPUT: 2 3 2 2 2 0
+--------------------------------------------------------------------------------
+Dialogue 25
+INPUT VALUES: 1 10 3 0 2 0
+CONVERSATION: you: let's split them in half <eos> them: i'd like 2 hats , and 1 ball . <eos> you: <selection>
+OUTPUT: item0=1 item1=1 item2=1 item0=0 item1=2 item2=1
+PARTNER INPUT: 1 2 3 2 2 1
+--------------------------------------------------------------------------------
+Dialogue 26
+INPUT VALUES: 1 2 3 2 2 1
+CONVERSATION: them: let's split them in half <eos> you: i'd like 2 hats , and 1 ball . <eos> them: <selection>
+OUTPUT: item0=0 item1=2 item2=1 item0=1 item1=1 item2=1
+PARTNER INPUT: 1 10 3 0 2 0
+--------------------------------------------------------------------------------
+Dialogue 27
+INPUT VALUES: 2 0 2 2 1 6
+CONVERSATION: them: i would like the ball and the books <eos> you: i will give you both books and a hat <eos> them: i can not do that . i do need the ball . <eos> you: if you give me both hats and both books i will give you the ball <eos> them: you can have both hats . can i have 1 book and the ball ? <eos> you: no i need both hats and both books <eos> them: okay . deal <eos> you: <selection>
+OUTPUT: item0=2 item1=2 item2=0 item0=0 item1=0 item2=1
+PARTNER INPUT: 2 2 2 0 1 6
+--------------------------------------------------------------------------------
+Dialogue 28
+INPUT VALUES: 2 2 2 0 1 6
+CONVERSATION: you: i would like the ball and the books <eos> them: i will give you both books and a hat <eos> you: i can not do that . i do need the ball . <eos> them: if you give me both hats and both books i will give you the ball <eos> you: you can have both hats . can i have 1 book and the ball ? <eos> them: no i need both hats and both books <eos> you: okay . deal <eos> them: <selection>
+OUTPUT: item0=0 item1=0 item2=1 item0=2 item1=2 item2=0
+PARTNER INPUT: 2 0 2 2 1 6
+--------------------------------------------------------------------------------
+Dialogue 29
+INPUT VALUES: 1 3 3 1 1 4
+CONVERSATION: them: hi , i would like the ball and 2 hats and you can have the book and 1 hat <eos> you: i rather like the ball also . you can have all three hats if i get the ball and book . <eos> them: ok , i can do that . <eos> you: <selection>
+OUTPUT: item0=1 item1=0 item2=1 item0=0 item1=3 item2=0
+PARTNER INPUT: 1 0 3 2 1 4
+--------------------------------------------------------------------------------
+Dialogue 30
+INPUT VALUES: 1 0 3 2 1 4
+CONVERSATION: you: hi , i would like the ball and 2 hats and you can have the book and 1 hat <eos> them: i rather like the ball also . you can have all three hats if i get the ball and book . <eos> you: ok , i can do that . <eos> them: <selection>
+OUTPUT: item0=0 item1=3 item2=0 item0=1 item1=0 item2=1
+PARTNER INPUT: 1 3 3 1 1 4
+--------------------------------------------------------------------------------
+Dialogue 31
+INPUT VALUES: 2 0 3 1 1 7
+CONVERSATION: them: hello , i would like the hats , and you can have the rest . i can also take 2 hats and the ball , giving you 1 hat and the books . <eos> you: could i have the ball and 1 hat ? <eos> them: yeah i can do that , where i get 2 hats and the books as well <eos> you: yes . deal ? <eos> them: deal <eos> you: <selection>
+OUTPUT: item0=0 item1=1 item2=1 item0=2 item1=2 item2=0
+PARTNER INPUT: 2 1 3 2 1 2
+--------------------------------------------------------------------------------
+Dialogue 32
+INPUT VALUES: 2 1 3 2 1 2
+CONVERSATION: you: hello , i would like the hats , and you can have the rest . i can also take 2 hats and the ball , giving you 1 hat and the books . <eos> them: could i have the ball and 1 hat ? <eos> you: yeah i can do that , where i get 2 hats and the books as well <eos> them: yes . deal ? <eos> you: deal <eos> them: <selection>
+OUTPUT: item0=2 item1=2 item2=0 item0=0 item1=1 item2=1
+PARTNER INPUT: 2 0 3 1 1 7
+--------------------------------------------------------------------------------
+Dialogue 33
+INPUT VALUES: 2 0 4 2 1 2
+CONVERSATION: them: i would like the ball and the books <eos> you: you can have the books but i would like the ball . <eos> them: thats not going to work for me unfortunately . i need the ball and at least 1 book minimum <eos> you: hmm . okay , i think i can work with that . i take the hats , you get the ball and books ? <eos> them: yes please . thank you <eos> you: okay , it's a deal . <eos> them: <selection>
+OUTPUT: item0=0 item1=4 item2=0 item0=2 item1=0 item2=1
+PARTNER INPUT: 2 3 4 0 1 4
+--------------------------------------------------------------------------------
+Dialogue 34
+INPUT VALUES: 2 3 4 0 1 4
+CONVERSATION: you: i would like the ball and the books <eos> them: you can have the books but i would like the ball . <eos> you: thats not going to work for me unfortunately . i need the ball and at least 1 book minimum <eos> them: hmm . okay , i think i can work with that . i take the hats , you get the ball and books ? <eos> you: yes please . thank you <eos> them: okay , it's a deal . <eos> you: <selection>
+OUTPUT: item0=2 item1=0 item2=1 item0=0 item1=4 item2=0
+PARTNER INPUT: 2 0 4 2 1 2
+--------------------------------------------------------------------------------
+Dialogue 35
+INPUT VALUES: 4 2 1 0 1 2
+CONVERSATION: them: i'd like the basketball and the hat , you can keep all 4 books ? <eos> you: deal . <eos> them: <selection>
+OUTPUT: item0=4 item1=0 item2=0 item0=0 item1=1 item2=1
+PARTNER INPUT: 4 0 1 3 1 7
+--------------------------------------------------------------------------------
+Dialogue 36
+INPUT VALUES: 4 0 1 3 1 7
+CONVERSATION: you: i'd like the basketball and the hat , you can keep all 4 books ? <eos> them: deal . <eos> you: <selection>
+OUTPUT: item0=0 item1=1 item2=1 item0=4 item1=0 item2=0
+PARTNER INPUT: 4 2 1 0 1 2
+--------------------------------------------------------------------------------
+Dialogue 37
+INPUT VALUES: 1 6 2 0 4 1
+CONVERSATION: them: balls and hats for me <eos> you: can i have one ball and the book ? <eos> them: yes deal <eos> you: <selection>
+OUTPUT: item0=1 item1=0 item2=1 item0=0 item1=2 item2=3
+PARTNER INPUT: 1 0 2 1 4 2
+--------------------------------------------------------------------------------
+Dialogue 38
+INPUT VALUES: 1 0 2 1 4 2
+CONVERSATION: you: balls and hats for me <eos> them: can i have one ball and the book ? <eos> you: yes deal <eos> them: <selection>
+OUTPUT: item0=0 item1=2 item2=3 item0=1 item1=0 item2=1
+PARTNER INPUT: 1 6 2 0 4 1
+--------------------------------------------------------------------------------
+Dialogue 39
+INPUT VALUES: 1 1 3 1 2 3
+CONVERSATION: them: i'm interested in the book and both balls in exchange for the hats . <eos> you: definitely not both balls . we could split them ? <eos> them: i think that's fair . i agree . 1 book , 1 ball for me . . . rest for you . <eos> you: deal ! <eos> them: <selection>
+OUTPUT: item0=0 item1=3 item2=1 item0=1 item1=0 item2=1
+PARTNER INPUT: 1 4 3 0 2 3
+--------------------------------------------------------------------------------
+Dialogue 40
+INPUT VALUES: 1 4 3 0 2 3
+CONVERSATION: you: i'm interested in the book and both balls in exchange for the hats . <eos> them: definitely not both balls . we could split them ? <eos> you: i think that's fair . i agree . 1 book , 1 ball for me . . . rest for you . <eos> them: deal ! <eos> you: <selection>
+OUTPUT: item0=1 item1=0 item2=1 item0=0 item1=3 item2=1
+PARTNER INPUT: 1 1 3 1 2 3
+--------------------------------------------------------------------------------
+Dialogue 41
+INPUT VALUES: 2 0 2 0 1 10
+CONVERSATION: you: i want the ball <eos> them: ok , i get rest <eos> you: deal <eos> them: <selection>
+OUTPUT: item0=0 item1=0 item2=1 item0=2 item1=2 item2=0
+PARTNER INPUT: 2 2 2 2 1 2
+--------------------------------------------------------------------------------
+Dialogue 42
+INPUT VALUES: 2 2 2 2 1 2
+CONVERSATION: them: i want the ball <eos> you: ok , i get rest <eos> them: deal <eos> you: <selection>
+OUTPUT: item0=2 item1=2 item2=0 item0=0 item1=0 item2=1
+PARTNER INPUT: 2 0 2 0 1 10
+--------------------------------------------------------------------------------
+Dialogue 43
+INPUT VALUES: 2 2 1 6 3 0
+CONVERSATION: you: i'll take books and hat if you want the balls <eos> them: i can give you the hat and one of the books . <eos> you: ok <eos> them: <selection>
+OUTPUT: item0=1 item1=1 item2=0 item0=1 item1=0 item2=3
+PARTNER INPUT: 2 2 1 0 3 2
+--------------------------------------------------------------------------------
+Dialogue 44
+INPUT VALUES: 2 2 1 0 3 2
+CONVERSATION: them: i'll take books and hat if you want the balls <eos> you: i can give you the hat and one of the books . <eos> them: ok <eos> you: <selection>
+OUTPUT: item0=1 item1=0 item2=3 item0=1 item1=1 item2=0
+PARTNER INPUT: 2 2 1 6 3 0
+--------------------------------------------------------------------------------
+Dialogue 45
+INPUT VALUES: 2 3 2 0 2 2
+CONVERSATION: them: hello <eos> you: hi . may i have the books and 1 hat ? <eos> them: id rather give the balls than the hat <eos> you: if i can have both the books and 1 ball , you can have the rest . <eos> them: ill give you 2 balls and 1 book <eos> you: deal ! <eos> them: <selection>
+OUTPUT: item0=1 item1=0 item2=2 item0=1 item1=2 item2=0
+PARTNER INPUT: 2 2 2 2 2 1
+--------------------------------------------------------------------------------
+Dialogue 46
+INPUT VALUES: 2 2 2 2 2 1
+CONVERSATION: you: hello <eos> them: hi . may i have the books and 1 hat ? <eos> you: id rather give the balls than the hat <eos> them: if i can have both the books and 1 ball , you can have the rest . <eos> you: ill give you 2 balls and 1 book <eos> them: deal ! <eos> you: <selection>
+OUTPUT: item0=1 item1=2 item2=0 item0=1 item1=0 item2=2
+PARTNER INPUT: 2 3 2 0 2 2
+--------------------------------------------------------------------------------
+Dialogue 47
+INPUT VALUES: 3 0 2 5 2 0
+CONVERSATION: you: i need 2 hats and 1 ball . <eos> them: ok deal <eos> you: <selection>
+OUTPUT: item0=0 item1=2 item2=1 item0=3 item1=0 item2=1
+PARTNER INPUT: 3 2 2 1 2 1
+--------------------------------------------------------------------------------
+Dialogue 48
+INPUT VALUES: 3 2 2 1 2 1
+CONVERSATION: them: i need 2 hats and 1 ball . <eos> you: ok deal <eos> them: <selection>
+OUTPUT: item0=3 item1=0 item2=1 item0=0 item1=2 item2=1
+PARTNER INPUT: 3 0 2 5 2 0
+--------------------------------------------------------------------------------
+Dialogue 49
+INPUT VALUES: 2 0 2 4 1 2
+CONVERSATION: them: i'll take one of each if that's ok ? <eos> you: i need 2 hats . you can have the rest <eos> them: ok <eos> you: <selection>
+OUTPUT: item0=0 item1=2 item2=0 item0=2 item1=0 item2=1
+PARTNER INPUT: 2 1 2 2 1 4
+--------------------------------------------------------------------------------
+Dialogue 50
+INPUT VALUES: 2 1 2 2 1 4
+CONVERSATION: you: i'll take one of each if that's ok ? <eos> them: i need 2 hats . you can have the rest <eos> you: ok <eos> them: <selection>
+OUTPUT: item0=2 item1=0 item2=1 item0=0 item1=2 item2=0
+PARTNER INPUT: 2 0 2 4 1 2
+--------------------------------------------------------------------------------
